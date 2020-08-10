@@ -1,8 +1,9 @@
 score = input("Input a score: ")
-try:
-    score = float(score)
-except:
-    score = -1
+score = float(score)
+if score < 0:
+    print("Non existant score")
+elif score > 10:
+    print("Higher than maximum score")
 
 if score >= 0.9:
     print("A")
